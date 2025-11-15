@@ -29,7 +29,6 @@ export function BackgroundBeamsWithCollisionDemo() {
                       className: "text-red",
                     },
                     { text: "Junior", className: "text-red" },
-                    { text: "Front-End", className: "text-red" },
                     { text: "Developer.", className: "text-red" },
                   ]}
                 />

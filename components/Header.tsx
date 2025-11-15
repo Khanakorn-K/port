@@ -39,7 +39,7 @@ function Navbar({ className }: { className?: string }) {
         className
       )}
     >
-      <p className="flex gap-4 items-center text-3xl  max-sm:text-xs bg-white dark:bg-neutral-950 p-2 rounded-3xl max-lg:hidden">
+      <p className="flex gap-4 items-center text-3xl  max-sm:text-xs bg-white bg-opacity-0 p-2 rounded-3xl max-lg:hidden">
         {time.toLocaleTimeString()}
         <CiClock1 />
       </p>
@@ -75,7 +75,7 @@ function Navbar({ className }: { className?: string }) {
               <ProductItem
                 imagesize="max-h-[100px] max-w-[140px]"
                 title="Git"
-                href="https://github.com/ColonyRabbit"
+                href="https://github.com/khanakorn-k"
                 src="/git.jpg"
                 description="My Git Hub"
               />
@@ -94,6 +94,13 @@ function Navbar({ className }: { className?: string }) {
                   description="My Gmail"
                 />
               </button>
+              <ProductItem
+                imagesize="max-h-[100px] max-w-[140px]"
+                title="LinkedIn"
+                href="https://www.linkedin.com/in/khana-korn-924359354/"
+                src="/linkedIn.png"
+                description="My LinkedIn"
+              />
               {/* <ProductItem
                 imagesize="max-h-[100px] max-w-[140px]"
                 title="Facebook"

@@ -103,6 +103,32 @@ export function TimelineDemo() {
         </div>
       ),
     },
+    {
+      title: (
+        <>
+          MAY 15 2025 <br /> - <br />
+          PRESENT
+        </>
+      ),
+      content: (
+        <div>
+          <div
+            data-aos="fade-up"
+            className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8"
+          >
+            Megazy co. ltd
+            <div data-aos="fade-up">
+              <p className="font-bold">iOS Developer </p>
+              <p>
+                contributing to Resgo and Jertam as a Front-End iOS engineer,
+                focusing on building intuitive user interfaces with Project
+                Clean architecture and seamless mobile experiences.
+              </p>
+            </div>
+          </div>
+        </div>
+      ),
+    },
   ];
   return (
     <div className="w-full">
