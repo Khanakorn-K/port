@@ -20,6 +20,7 @@ jobs:
       # แต่กรณีนี้ใช้ NEXT_PUBLIC_* ซึ่งเป็น public config ของ Next.js
       # ที่ถูกออกแบบให้ expose ฝั่ง browser และต้องใช้ตอน build time
       # ไม่ควร set env ลงที่ workflow แบบนี้แ
+      # อะไรที่ไม่ public อันนั้นคือผ่าน git secret เท่านั้น
       - name: Add secrets to ENV
         run: |
           sed -i "s|NEXT_PUBLIC_SERVICE_ID_PLACEHOLDER|${NEXT_PUBLIC_SERVICE_ID}|g" env/.env.dev
