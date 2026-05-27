@@ -14,11 +14,12 @@ jobs:
 
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v2
-# หมายเหตุ:
-# โดยหลักไม่ควร inject secret ลงไฟล์ก่อน docker build
-# เพราะอาจถูกฝังเข้าไปใน Docker image layer ได้
-# แต่กรณีนี้ใช้ NEXT_PUBLIC_* ซึ่งเป็น public config ของ Next.js
-# ที่ถูกออกแบบให้ expose ฝั่ง browser และต้องใช้ตอน build time
+        # หมายเหตุ:
+        # โดยหลักไม่ควร inject secret ลงไฟล์ก่อน docker build
+        # เพราะอาจถูกฝังเข้าไปใน Docker image layer ได้
+        # แต่กรณีนี้ใช้ NEXT_PUBLIC_* ซึ่งเป็น public config ของ Next.js
+        # ที่ถูกออกแบบให้ expose ฝั่ง browser และต้องใช้ตอน build time
+        # ไม่ควร set env ลงที่ workflow แบบนี้
       - name: Add secrets to ENV
         run: |
           sed -i "s|NEXT_PUBLIC_SERVICE_ID_PLACEHOLDER|${NEXT_PUBLIC_SERVICE_ID}|g" env/.env.dev
