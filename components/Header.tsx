@@ -97,7 +97,7 @@ function Navbar({ className }: { className?: string }) {
               <ProductItem
                 imagesize="max-h-[100px] max-w-[140px]"
                 title="LinkedIn"
-                href="https://www.linkedin.com/in/khana-korn-924359354/"
+                href="https://www.linkedin.com/in/khanakorn-kositkhongchana-924359354/"
                 src="/linkedIn.png"
                 description="My LinkedIn"
               />
